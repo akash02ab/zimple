@@ -1,0 +1,78 @@
+.app {
+  height: 100vh;
+  background-color: #f9f5ff;
+  overflow: hidden;
+  
+  .wrapper {
+    padding: 1em 4em;
+    display: flex;
+    position: relative;
+
+    .text-container {
+      width: 60%;
+
+      & > h1 {
+        font-size: 2.5em;
+        font-weight: 700;
+        margin-bottom: 1em;
+
+        & > span {
+          color: #7000ff;
+        }
+      }
+
+      & > p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        margin-bottom: 1em;
+      }
+
+      & > button {
+        font-size: 1.2em;
+        font-weight: 700;
+        padding: 1em 2em;
+        border-radius: 0.5em;
+        background-color: #7000ff;
+        color: #f9f5ff;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          background-color: #f9f5ff;
+          color: #7000ff;
+          border: 1px solid #7000ff;
+        }
+      }
+    }
+
+    .image-container {
+      width: 40%;
+      
+      & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    @media screen and (max-width: 960px) {
+      flex-direction: column-reverse;
+      padding: 1em;
+      height: 85vh;
+      overflow: auto;
+     
+      .text-container {
+        width: 100%;
+      }
+
+      .image-container {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 365px) {
+      font-size: 12px;
+    }
+  }
+}

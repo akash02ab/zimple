@@ -1,0 +1,88 @@
+.app {
+  height: 100vh;
+  background-color: #f9f5ff;
+  overflow: hidden;
+}
+
+.app .wrapper {
+  padding: 1em 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.app .wrapper .text-container {
+  width: 60%;
+}
+
+.app .wrapper .text-container > h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.app .wrapper .text-container > h1 > span {
+  color: #7000ff;
+}
+
+.app .wrapper .text-container > p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.app .wrapper .text-container > button {
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  background-color: #7000ff;
+  color: #f9f5ff;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.app .wrapper .text-container > button:hover {
+  background-color: #f9f5ff;
+  color: #7000ff;
+  border: 1px solid #7000ff;
+}
+
+.app .wrapper .image-container {
+  width: 40%;
+}
+
+.app .wrapper .image-container > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 960px) {
+  .app .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 1em;
+    height: 85vh;
+    overflow: auto;
+  }
+  .app .wrapper .text-container {
+    width: 100%;
+  }
+  .app .wrapper .image-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .app .wrapper {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=app.css.map */
